@@ -261,6 +261,13 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 125%;
+  /*For accessibility purpose, keeping the global font size at 20px */
+  line-height: 1.15;
+}
+
 h1,
 h2,
 p {
@@ -268,11 +275,9 @@ p {
   padding: 0;
 }
 
-html {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 125%;
-  /*For accessibility purpose, keeping the global font size at 20px */
-  line-height: 1.15;
+h1 {
+  font-size: 8.3rem;
+  font-weight: normal;
 }
 
 p {
