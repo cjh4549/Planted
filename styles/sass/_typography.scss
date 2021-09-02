@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap");
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 125%; /*For accessibility purpose, keeping the global font size at 20px */
+  line-height: 1.15;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
