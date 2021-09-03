@@ -1,10 +1,25 @@
 header {
-  height: 100vh;
+  position: relative;
+  height: 48vw;
   background: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
+
+  &::before {
+    content: "";
+    background: url(../planted-final-assets/header-box.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 40%;
+    height: 80vh;
+  }
 }
 
 .navbar {
@@ -42,11 +57,4 @@ header {
   & span {
     color: $sunnyYellow;
   }
-}
-
-.heroImg {
-  position: absolute;
-  top: 25%;
-  right: 0;
-  z-index: 0;
 }
