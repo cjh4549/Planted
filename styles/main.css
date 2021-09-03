@@ -360,8 +360,20 @@ header {
 
 .heroText {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 53%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  line-height: 0.8;
+  z-index: 1;
+}
+.heroText span {
+  color: #f8e71c;
+}
+
+.heroImg {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  z-index: 0;
 }
