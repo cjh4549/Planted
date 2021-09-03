@@ -319,6 +319,15 @@ ul {
   margin: 0 auto;
 }
 
+.btn {
+  background-color: #0e902d;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
 header {
   height: 100vh;
   background: url(../planted-final-assets/home-image-1.jpg);
@@ -373,7 +382,37 @@ header {
 
 .heroImg {
   position: absolute;
-  top: 30%;
+  top: 25%;
   right: 0;
   z-index: 0;
+}
+
+.about {
+  background-color: #f0efed;
+  padding: 11rem 0;
+}
+.about__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.about__text h2,
+.about__text p {
+  margin-bottom: 1.5rem;
+}
+.about__text h2 {
+  font-size: 2.812rem;
 }

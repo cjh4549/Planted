@@ -1,0 +1,23 @@
+// About
+
+.about {
+  background-color: $offWhite;
+  padding: 11rem 0;
+
+  &__text {
+    @include flexCenter;
+    flex-direction: column;
+    padding: 0 5rem;
+    text-align: center;
+    line-height: 1.6rem;
+
+    & h2,
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    & h2 {
+      font-size: 2.812rem;
+    }
+  }
+}
