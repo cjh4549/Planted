@@ -313,7 +313,55 @@ ul {
 }
 
 .wrapper {
-  width: 90%;
+  width: 80%;
+  height: 100%;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  background: url(../planted-final-assets/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+}
+.navbar__logo {
+  font-size: 2rem;
+}
+.navbar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar__items li {
+  margin-left: 3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.navbar__items li:first-of-type a {
+  color: #f8e71c;
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }

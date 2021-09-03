@@ -1,0 +1,41 @@
+// Header
+
+header {
+  height: 100vh;
+  background: url(../planted-final-assets/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  padding-top: 1rem;
+
+  &__logo {
+    font-size: 2rem;
+  }
+
+  &__items {
+    @include flexCenter;
+
+    & li {
+      margin-left: 3rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+
+      &:first-of-type a {
+        color: $sunnyYellow;
+      }
+    }
+  }
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
