@@ -6,6 +6,10 @@ $sunnyYellow: #f8e71c;
 $green: #0e902d;
 
 // functions
+// @function clamp($min, $desired, $vw, $max) {
+//   $result: min(max(#{$min}rem, #{$desired}rem + #{$vw}vw), #{$max}rem);
+//   @return $result;
+// }
 
 // mixins
 @mixin flexCenter {
@@ -19,7 +23,4 @@ $green: #0e902d;
     #{$min}px + (#{$max} - #{$min}) *
       ((100vw - #{$minVW}px) / (1600 - #{$minVW}))
   );
-}
-
-@mixin clamp() {
 }

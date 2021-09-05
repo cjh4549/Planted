@@ -22,3 +22,11 @@
     }
   }
 }
+
+// Workshop
+
+.workshop {
+  padding: min(max(4rem, 2rem + 15vw), 11rem) 1rem;
+  @include flexCenter;
+  flex-direction: row;
+}
