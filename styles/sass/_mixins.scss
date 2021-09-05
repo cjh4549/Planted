@@ -3,3 +3,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin fluidFS($min, $max, $minVW) {
+  font-size: calc(
+    #{$min}px + (#{$max} - #{$min}) *
+      ((100vw - #{$minVW}px) / (1600 - #{$minVW}))
+  );
+}

@@ -15,7 +15,8 @@ p {
 
 h1 {
   // font-size: 8.3rem;
-  font-size: calc(2rem + (166 - 40) * ((100vw - 300px) / (1600 - 300)));
+  @include fluidFS(40, 166, 300);
+  // font-size: calc(2rem + (166 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-weight: normal;
 }
 
