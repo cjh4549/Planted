@@ -282,7 +282,7 @@ h1 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)) );
   line-height: 1.6rem;
 }
 
@@ -321,7 +321,7 @@ ul {
 
 .btn {
   background-color: #0e902d;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border: none;
   font-weight: bold;
   font-size: 0.9rem;
@@ -358,7 +358,7 @@ header::before {
   padding-top: 1rem;
 }
 .navbar__logo {
-  font-size: calc( 20px + (45 - 20) * ((100vw - 800px) / (1600 - 800)) );
+  font-size: calc( 30px + (45 - 30) * ((100vw - 800px) / (1600 - 800)) );
 }
 .navbar__items {
   display: -webkit-box;
@@ -396,7 +396,7 @@ header::before {
 
 .about {
   background-color: #f0efed;
-  padding: 11rem 0;
+  padding: min(max(4rem, 2rem + 15vw), 11rem) 0;
 }
 .about__text {
   display: -webkit-box;
@@ -412,14 +412,14 @@ header::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 5rem;
+  padding: 0 7%;
   text-align: center;
-  line-height: 1.6rem;
 }
-.about__text h2,
 .about__text p {
   margin-bottom: 1.5rem;
 }
 .about__text h2 {
-  font-size: 2.812rem;
+  margin-bottom: 0.5rem;
+  font-size: calc( 25px + (56.3 - 25) * ((100vw - 300px) / (1600 - 300)) );
+  letter-spacing: 1.3px;
 }

@@ -1,3 +1,13 @@
+// variables
+$black: #2c2c2c;
+$offWhite: #f0efed;
+$forestGreen: #074115;
+$sunnyYellow: #f8e71c;
+$green: #0e902d;
+
+// functions
+
+// mixins
 @mixin flexCenter {
   display: flex;
   justify-content: center;
@@ -9,4 +19,7 @@
     #{$min}px + (#{$max} - #{$min}) *
       ((100vw - #{$minVW}px) / (1600 - #{$minVW}))
   );
+}
+
+@mixin clamp() {
 }

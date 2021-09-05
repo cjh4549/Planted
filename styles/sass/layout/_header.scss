@@ -28,7 +28,7 @@ header {
 
   &__logo {
     // font-size: 2rem;
-    @include fluidFS(20, 45, 800);
+    @include fluidFS(30, 45, 800);
   }
 
   &__items {

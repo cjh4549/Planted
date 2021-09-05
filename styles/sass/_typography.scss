@@ -22,7 +22,7 @@ h1 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  @include fluidFS(18, 20, 300);
   line-height: 1.6rem;
 }
 

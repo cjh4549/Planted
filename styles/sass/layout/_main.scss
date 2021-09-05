@@ -2,22 +2,23 @@
 
 .about {
   background-color: $offWhite;
-  padding: 11rem 0;
+  // padding: clamp(4rem, 2rem + 15vw, 11rem) 0;
+  padding: min(max(4rem, 2rem + 15vw), 11rem) 0;
 
   &__text {
     @include flexCenter;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0 7%;
     text-align: center;
-    line-height: 1.6rem;
 
-    & h2,
     p {
       margin-bottom: 1.5rem;
     }
 
     & h2 {
-      font-size: 2.812rem;
+      margin-bottom: 0.5rem;
+      @include fluidFS(25, 56.3, 300);
+      letter-spacing: 1.3px;
     }
   }
 }
