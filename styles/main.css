@@ -328,6 +328,14 @@ ul {
   letter-spacing: 1px;
 }
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
 header {
   position: relative;
   height: 48vw;
@@ -425,18 +433,61 @@ header::before {
 }
 
 .workshop {
-  padding: min(max(4rem, 2rem + 15vw), 11rem) 1rem;
+  padding-top: min(max(4rem, 2rem + 15vw), 6rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-left,
+.container-right {
+  max-width: 42vw;
+}
+.container-left__img,
+.container-right__img {
+  width: 100%;
+}
+.container-left__img img,
+.container-right__img img {
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-shadow: 1rem 1rem #f8e71c;
+          box-shadow: 1rem 1rem #f8e71c;
+}
+.container-left__text h2,
+.container-right__text h2 {
+  font-size: calc( 25px + (32 - 25) * ((100vw - 300px) / (1600 - 300)) );
+}
+.container-left__text p,
+.container-right__text p {
+  font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)) );
+}
+
+.container-left__text {
+  padding-top: 5%;
+  padding-left: 23%;
+  text-align: right;
+}
+.container-left__img {
+  margin-top: -8rem;
+  margin-bottom: 5rem;
+}
+
+.container-right__text {
+  margin-bottom: 4rem;
+  padding-right: 23%;
+  text-align: left;
+}
+
+.container-right__img img {
+  -webkit-box-shadow: -1rem 1rem #f8e71c;
+          box-shadow: -1rem 1rem #f8e71c;
+}
+
+.feature {
+  background-color: #f0efed;
+  padding: min(max(4rem, 2rem + 15vw), 6rem) 0;
 }

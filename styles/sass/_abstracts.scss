@@ -24,3 +24,7 @@ $green: #0e902d;
       ((100vw - #{$minVW}px) / (1600 - #{$minVW}))
   );
 }
+
+@mixin boxShadow {
+  box-shadow: 1rem 1rem $sunnyYellow;
+}

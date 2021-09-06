@@ -26,7 +26,62 @@
 // Workshop
 
 .workshop {
-  padding: min(max(4rem, 2rem + 15vw), 11rem) 1rem;
-  @include flexCenter;
-  flex-direction: row;
+  padding-top: min(max(4rem, 2rem + 15vw), 6rem);
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-left,
+.container-right {
+  max-width: 42vw;
+
+  &__img {
+    width: 100%;
+
+    & img {
+      max-width: 100%;
+      width: 100%;
+      @include boxShadow;
+    }
+  }
+
+  &__text h2 {
+    @include fluidFS(25, 32, 300);
+  }
+
+  &__text p {
+    @include fluidFS(18, 20, 300);
+  }
+}
+
+.container-left {
+  &__text {
+    padding-top: 5%;
+    padding-left: 23%;
+    text-align: right;
+  }
+
+  &__img {
+    margin-top: -8rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.container-right {
+  &__text {
+    margin-bottom: 4rem;
+    padding-right: 23%;
+    text-align: left;
+  }
+}
+
+.container-right__img img {
+  box-shadow: -1rem 1rem $sunnyYellow;
+}
+
+// feature
+
+.feature {
+  background-color: $offWhite;
+  padding: min(max(4rem, 2rem + 15vw), 6rem) 0;
 }
