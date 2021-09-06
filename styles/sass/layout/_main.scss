@@ -79,7 +79,7 @@
   box-shadow: -1rem 1rem $sunnyYellow;
 }
 
-// feature
+// Feature
 
 .feature {
   background-color: $offWhite;
@@ -126,4 +126,72 @@
     font-size: 1.3rem;
     z-index: 1;
   }
+}
+
+// Banner
+.banner {
+  height: 30vw;
+  background: url(../planted-final-assets/banner-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//Founder
+
+.founder {
+  padding: min(max(4rem, 2rem + 15vw), 5rem) 0;
+  background-color: $offWhite;
+
+  & .wrapper {
+    display: flex;
+  }
+
+  &__img {
+    width: 108%;
+
+    & img {
+      width: 100%;
+      max-width: 100%;
+      @include boxShadow;
+    }
+  }
+
+  &__text {
+    padding-left: 10%;
+
+    & h2 {
+      @include fluidFS(30, 42, 300);
+    }
+  }
+}
+
+// Gallery
+
+.gallery {
+  padding: min(max(4rem, 2rem + 15vw), 5rem) 0;
+
+  & ul {
+    display: flex;
+
+    & li {
+      width: 100%;
+      margin-right: 2.3%;
+
+      & img {
+        width: calc(100% - 2.3%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 0.5rem;
+  background: $black;
+  color: $offWhite;
+  text-align: center;
 }

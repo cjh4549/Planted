@@ -537,3 +537,62 @@ header::before {
   font-size: 1.3rem;
   z-index: 1;
 }
+
+.banner {
+  height: 30vw;
+  background: url(../planted-final-assets/banner-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.founder {
+  padding: min(max(4rem, 2rem + 15vw), 5rem) 0;
+  background-color: #f0efed;
+}
+.founder .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.founder__img {
+  width: 108%;
+}
+.founder__img img {
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-shadow: 1rem 1rem #f8e71c;
+          box-shadow: 1rem 1rem #f8e71c;
+}
+.founder__text {
+  padding-left: 10%;
+}
+.founder__text h2 {
+  font-size: calc( 30px + (42 - 30) * ((100vw - 300px) / (1600 - 300)) );
+}
+
+.gallery {
+  padding: min(max(4rem, 2rem + 15vw), 5rem) 0;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery ul li {
+  width: 100%;
+  margin-right: 2.3%;
+}
+.gallery ul li img {
+  width: calc(100% - 2.3%);
+}
+.gallery ul li:last-child {
+  margin-right: 0;
+}
+
+footer {
+  padding: 0.5rem;
+  background: #2c2c2c;
+  color: #f0efed;
+  text-align: center;
+}
