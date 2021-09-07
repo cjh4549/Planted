@@ -1,0 +1,18 @@
+.blogHeader {
+  position: relative;
+  height: 36vw;
+  background: url(../planted-final-assets/blog-header-1.jpg) no-repeat center
+    center fixed;
+  background-size: cover;
+  color: #fff;
+
+  &__heading {
+    @include fluidFS(30, 75, 300);
+    font-weight: bold;
+    color: $sunnyYellow;
+  }
+
+  &__heading {
+    margin-top: 22.5%;
+  }
+}

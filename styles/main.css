@@ -349,7 +349,7 @@ ul {
   margin-bottom: 2rem;
 }
 
-header {
+.header__home {
   position: relative;
   height: 48vw;
   background: url(../planted-final-assets/home-image-1.jpg);
@@ -359,7 +359,7 @@ header {
   background-attachment: fixed;
   color: #fff;
 }
-header::before {
+.header__home::before {
   content: "";
   background: url(../planted-final-assets/header-box.jpg);
   background-size: cover;
@@ -630,4 +630,20 @@ footer {
   background: #2c2c2c;
   color: #f0efed;
   text-align: center;
+}
+
+.blogHeader {
+  position: relative;
+  height: 36vw;
+  background: url(../planted-final-assets/blog-header-1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+.blogHeader__heading {
+  font-size: calc( 30px + (75 - 30) * ((100vw - 300px) / (1600 - 300)) );
+  font-weight: bold;
+  color: #f8e71c;
+}
+.blogHeader__heading {
+  margin-top: 22.5%;
 }
