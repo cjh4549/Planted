@@ -41,8 +41,33 @@ header {
       font-weight: bold;
       letter-spacing: 1px;
 
+      & a,
+      &:first-of-type a {
+        position: relative;
+        padding-bottom: 2px;
+        transition: all 0.3s;
+      }
+
       &:first-of-type a {
         color: $sunnyYellow;
+      }
+
+      &:first-of-type a::after,
+      & a::after {
+        background-color: #fff;
+        @include hoverUnderline;
+      }
+
+      &:first-of-type a:hover::after,
+      &:first-of-type a:focus::after,
+      & a:hover::after,
+      & a:focus::after {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      & a::after {
+        background-color: $sunnyYellow;
       }
     }
   }

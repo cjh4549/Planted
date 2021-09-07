@@ -30,6 +30,14 @@
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: 1px;
+  transition: all 0.15s;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    border: 1px solid $green;
+    color: $green;
+  }
 }
 
 .mb-1 {
