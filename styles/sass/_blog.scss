@@ -1,3 +1,5 @@
+// Header
+
 .blogHeader {
   position: relative;
   height: 36vw;
@@ -14,5 +16,61 @@
 
   &__heading {
     margin-top: 22.5%;
+  }
+}
+
+// Main
+
+.blog {
+  background-color: $offWhite;
+  display: flex;
+  justify-content: space-between;
+
+  &__aside {
+    position: relative;
+    top: 7vw;
+    width: 23%;
+    height: 100%;
+    margin-left: 10%;
+    background-color: #fff;
+
+    &__img {
+      position: relative;
+      margin-top: -2vw;
+      width: 31vw;
+
+      & img {
+        position: relative;
+        left: -32%;
+
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      padding: 0 2rem 1rem 1.5rem;
+
+      & h3 {
+        margin: 1rem 0;
+      }
+
+      & li {
+        font-family: $roboto;
+      }
+    }
+  }
+
+  &__article {
+    width: 60%;
+
+    &__img {
+      width: 100%;
+
+      & img {
+        width: 100%;
+      }
+    }
   }
 }
