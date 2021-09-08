@@ -50,14 +50,27 @@
 
     &__text {
       width: 100%;
-      padding: 0 2rem 1rem 1.5rem;
+      padding: 0 2rem 1.5rem 1.5rem;
 
       & h3 {
         margin: 1rem 0;
       }
 
-      & li {
-        font-family: $roboto;
+      &-bottom ul {
+        & li {
+          padding-left: 1rem;
+          font-family: $roboto;
+          line-height: 1.6rem;
+        }
+
+        & li::before {
+          content: "\2022";
+          color: $green;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
       }
     }
   }

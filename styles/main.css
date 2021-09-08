@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap");
 html {
   line-height: 1.15;
@@ -690,13 +691,23 @@ footer {
 }
 .blog__aside__text {
   width: 100%;
-  padding: 0 2rem 1rem 1.5rem;
+  padding: 0 2rem 1.5rem 1.5rem;
 }
 .blog__aside__text h3 {
   margin: 1rem 0;
 }
-.blog__aside__text li {
+.blog__aside__text-bottom ul li {
+  padding-left: 1rem;
   font-family: "Roboto", sans-serif;
+  line-height: 1.6rem;
+}
+.blog__aside__text-bottom ul li::before {
+  content: "•";
+  color: #0e902d;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 .blog__article {
   width: 60%;
