@@ -774,12 +774,12 @@ footer {
   color: #074115;
   font-size: calc( 20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)) );
 }
-.blog__article__form {
+.blog__article .form {
   width: 100%;
   margin-right: 10%;
   margin-bottom: 8%;
 }
-.blog__article__form fieldset {
+.blog__article .form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -789,35 +789,35 @@ footer {
           flex-direction: column;
   border: none;
 }
-.blog__article__form fieldset * {
+.blog__article .form fieldset * {
   font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
   font-family: "Josefin Sans", sans-serif;
   font-weight: light;
 }
-.blog__article__form fieldset input, .blog__article__form fieldset textarea {
+.blog__article .form fieldset input, .blog__article .form fieldset textarea {
   padding: 4%;
   background-color: #f0efed;
   border: 3px solid #0e902d;
 }
-.blog__article__form fieldset input {
+.blog__article .form fieldset input {
   width: calc(100% - 15%);
   padding: 4%;
   margin: 0 5% 5% 0;
   border: none;
   border-bottom: 3px solid #0e902d;
 }
-.blog__article__form fieldset textarea {
+.blog__article .form fieldset textarea {
   height: 15vw;
   margin-bottom: 2rem;
 }
-.blog__article__form fieldset button {
+.blog__article .form fieldset button {
   color: #fff;
 }
-.blog__article__form-container {
+.blog__article .form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.blog__article__form-comment {
+.blog__article .form-comment {
   height: 15vw;
 }
