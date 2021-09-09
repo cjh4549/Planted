@@ -24,15 +24,41 @@
         </nav>  
         <h1 class="header__heading wrapper">Get in <span>Touch</span></h1>
     </header>
-    <main>
-        <div class="socialIcons">
-            <ul>
-                <li><a class="fab fa-facebook-f" href="facebook.com"></a></li>
-                <li><a class="fab fa-instagram" href="instagram.com"></a></li>
-                <li><a class="fab fa-linkedin-in" href="linkedin.com"></a></li>
-                <li><a class="fab fa-twitter" href="twitter.com"></a></li>
-            </ul>
+    <main class="contact">
+        <div class="wrapper">
+            <div class="contact__container">
+                <div class="socialIcons">
+                    <ul>
+                        <li><a class="fab fa-facebook-f" href="facebook.com"></a></li>
+                        <li><a class="fab fa-instagram" href="instagram.com"></a></li>
+                        <li><a class="fab fa-linkedin-in" href="linkedin.com"></a></li>
+                        <li><a class="fab fa-twitter" href="twitter.com"></a></li>
+                    </ul>
+                </div>
+                <div class="contactInfo">
+                    <h3>CONTACT</h3>
+                    <a href="mailto:info@email.com">info@email.com</a>
+                    <a href="tel:1234567890">123-456-7890</a>
+                    <p>123 some road, <span>Toronto, ON</span></p>
+                </div>
+            </div>
+            <form action="" class="form">
+                <fieldset>
+                    <div class="form-container">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </div>
+                    <label for="comment" class="sr-only">Comment</label>
+                    <textarea name="comment" id="comment" cols="20" rows="10" placeholder="Comment"></textarea>
+
+                    <button type="submit" class="btn">Post Comment</button>
+                </fieldset>
+            </form>
         </div>
+        
     </main>
 </body>
 </html>

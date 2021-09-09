@@ -836,6 +836,60 @@ footer {
   display: block;
 }
 
-.socialIcons {
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialIcons ul li a {
   color: #0e902d;
+}
+
+.contact .form {
+  width: 100%;
+  margin-right: 10%;
+  margin-bottom: 8%;
+}
+.contact .form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+}
+.contact .form fieldset * {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: light;
+}
+.contact .form fieldset input, .contact .form fieldset textarea {
+  padding: 4%;
+  background-color: #f0efed;
+  border: 3px solid #0e902d;
+}
+.contact .form fieldset input {
+  width: calc(100% - 15%);
+  padding: 4%;
+  margin: 0 5% 5% 0;
+  border: none;
+  border-bottom: 3px solid #0e902d;
+}
+.contact .form fieldset textarea {
+  height: 15vw;
+  margin-bottom: 2rem;
+}
+.contact .form fieldset button {
+  color: #fff;
+}
+.contact .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .form-comment {
+  height: 15vw;
 }

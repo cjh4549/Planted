@@ -12,6 +12,62 @@
   }
 }
 
+main .wrapper {
+  display: flex;
+}
+
 .socialIcons {
-  color: $green;
+  & ul li a {
+    color: $green;
+  }
+}
+
+.contact .form {
+  width: 100%;
+  margin-right: 10%;
+  margin-bottom: 8%;
+
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+    & * {
+      @include fluidFS(16, 20, 300);
+      font-family: $josefinSans;
+      font-weight: light;
+    }
+
+    & input,
+    & textarea {
+      padding: 4%;
+      background-color: $offWhite;
+      border: 3px solid $green;
+    }
+
+    & input {
+      width: calc(100% - 15%);
+      padding: 4%;
+      margin: 0 5% 5% 0;
+      border: none;
+      border-bottom: 3px solid $green;
+    }
+
+    & textarea {
+      height: 15vw;
+      margin-bottom: 2rem;
+    }
+
+    & button {
+      color: $white;
+    }
+  }
+
+  &-container {
+    display: flex;
+  }
+
+  &-comment {
+    height: 15vw;
+  }
 }
