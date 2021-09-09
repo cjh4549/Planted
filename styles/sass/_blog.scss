@@ -8,6 +8,15 @@
   background-size: cover;
   color: #fff;
 
+  & .navbar {
+    background-color: $black;
+    padding-bottom: 0.4rem;
+
+    & .wrapper {
+      display: flex;
+    }
+  }
+
   &__heading {
     @include fluidFS(30, 75, 300);
     font-weight: bold;
@@ -92,7 +101,8 @@
 
     &__text {
       margin-left: -1rem;
-      padding: 4rem 2.5rem 2rem 2.5rem;
+      margin-right: 15%;
+      padding: 4rem 0 2rem 2.5rem;
       border-left-width: 0.3rem;
       border-left-style: solid;
       border-left-color: $sunnyYellow;
@@ -125,14 +135,25 @@
     &__comment {
       margin-top: 2rem;
 
-      & h3 {
+      & h2 {
         margin-bottom: 2.5rem;
         @include fluidFS(20, 30, 300);
       }
 
+      &-img {
+        margin-right: 2rem;
+      }
+
       &-user {
         display: flex;
-        margin-bottom: 2rem;
+        margin-bottom: 10%;
+        padding-right: 15%;
+
+        &-text h3 {
+          margin-bottom: 0.2rem;
+          color: $forestGreen;
+          @include fluidFS(20, 25, 300);
+        }
       }
     }
   }
