@@ -701,8 +701,10 @@ footer {
   width: 100%;
   padding: 0 2rem 1.5rem 1.5rem;
 }
-.blog__aside__text h3 {
+.blog__aside__text h2 {
   margin: 1rem 0;
+  font-size: calc( 15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)) );
+  letter-spacing: 1px;
 }
 .blog__aside__text-bottom ul li {
   padding-left: 1rem;
@@ -820,4 +822,12 @@ footer {
 }
 .blog__article .form-comment {
   height: 15vw;
+}
+
+.contact .header {
+  background: url(../planted-final-assets/contact-header-1.jpg) no-repeat center center fixed;
+  height: 38vw;
+}
+.contact .header h1 span {
+  display: block;
 }
