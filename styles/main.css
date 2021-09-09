@@ -644,28 +644,28 @@ footer {
   text-align: center;
 }
 
-.blogHeader {
+.header {
   position: relative;
   height: 36vw;
   background: url(../planted-final-assets/blog-header-1.jpg) no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
-.blogHeader .navbar {
+.header .navbar {
   background-color: #000;
   padding-bottom: 0.4rem;
 }
-.blogHeader .navbar .wrapper {
+.header .navbar .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.blogHeader__heading {
+.header__heading {
   font-size: calc( 30px + (75 - 30) * ((100vw - 300px) / (1600 - 300)) );
   font-weight: bold;
   color: #f8e71c;
 }
-.blogHeader__heading {
+.header__heading {
   margin-top: 22.5%;
 }
 
