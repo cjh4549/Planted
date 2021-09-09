@@ -779,3 +779,45 @@ footer {
   color: #074115;
   font-size: calc( 20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)) );
 }
+.blog__article__form fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog__article__form fieldset > * {
+  margin: 2%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: light;
+}
+.blog__article__form fieldset input {
+  background-color: #f0efed;
+  border: 2px solid #0e902d;
+}
+.blog__article__form fieldset .btn {
+  color: #fff;
+}
+.blog__article__form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog__article__form-container input::-webkit-input-placeholder {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+}
+.blog__article__form-container input::-moz-placeholder {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+}
+.blog__article__form-container input:-ms-input-placeholder {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+}
+.blog__article__form-container input::-ms-input-placeholder {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+}
+.blog__article__form-container input::placeholder {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+}

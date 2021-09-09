@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap");
 
 html {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $josefinSans;
   font-size: 125%; /*For accessibility purpose, keeping the global font size at 20px */
   line-height: 1.15;
 }
@@ -22,7 +22,7 @@ h1 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: $roboto;
   @include fluidFS(18, 20, 300);
   line-height: 1.6rem;
 }

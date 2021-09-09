@@ -156,5 +156,36 @@
         }
       }
     }
+
+    &__form {
+      & fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+          margin: 2%;
+          font-family: $josefinSans;
+          font-weight: light;
+        }
+
+        & input {
+          background-color: $offWhite;
+          border: 2px solid $green;
+        }
+
+        & .btn {
+          color: $white;
+        }
+      }
+
+      &-container {
+        display: flex;
+
+        & input::placeholder {
+          @include fluidFS(16, 20, 300);
+        }
+      }
+    }
   }
 }
