@@ -1,9 +1,17 @@
 .contact .header {
   background: url(../planted-final-assets/contact-header-1.jpg) no-repeat center
     center fixed;
-  height: 38vw;
+  background-size: cover;
+  height: 36vw;
 
-  & h1 span {
-    display: block;
+  & h1 {
+    margin-top: 18%;
+    & span {
+      display: block;
+    }
   }
+}
+
+.socialIcons {
+  color: $green;
 }

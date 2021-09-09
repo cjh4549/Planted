@@ -18,7 +18,7 @@
   }
 
   &__heading {
-    @include fluidFS(30, 75, 300);
+    @include fluidFS(30, 80, 300);
     font-weight: bold;
     color: $sunnyYellow;
   }
