@@ -366,6 +366,10 @@ fieldset {
   overflow: hidden;
 }
 
+i.fa-bars {
+  visibility: hidden;
+}
+
 .header__home {
   position: relative;
   height: 48vw;
