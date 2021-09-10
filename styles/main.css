@@ -331,7 +331,8 @@ fieldset {
   display: flex;
 }
 
-.btn {
+.btn,
+.btn:visited {
   background-color: #0e902d;
   padding: 0.7rem 1.5rem;
   border: none;
@@ -342,7 +343,10 @@ fieldset {
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-.btn:hover, .btn:focus, .btn:active {
+.btn:hover, .btn:focus, .btn:active,
+.btn:visited:hover,
+.btn:visited:focus,
+.btn:visited:active {
   background-color: #fff;
   color: #0e902d;
 }
@@ -953,5 +957,15 @@ main .wrapper {
 
   .feature .wrapper {
     width: 91%;
+  }
+}
+@media (max-width: 940px) {
+  .about {
+    padding: min(max(4rem, 2rem + 15vw), 6rem) 0;
+  }
+}
+@media (max-width: 768px) {
+  .feature {
+    padding-top: min(max(4rem, 2rem + 15vw), 5rem);
   }
 }

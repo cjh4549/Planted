@@ -23,7 +23,8 @@
   display: flex;
 }
 
-.btn {
+.btn,
+.btn:visited {
   background-color: $green;
   padding: 0.7rem 1.5rem;
   border: none;
