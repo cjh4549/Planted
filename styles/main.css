@@ -1180,3 +1180,36 @@ main .wrapper {
     margin-bottom: 2rem;
   }
 }
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .contact .header {
+    height: 40vw;
+  }
+
+  .mainContact {
+    padding: min(max(4rem, 2rem + 10vw), 5rem) 0;
+  }
+  .mainContact .wrapper form {
+    margin: 0;
+  }
+
+  .mainContact .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .contact__container {
+    margin-bottom: 10%;
+  }
+
+  .contact .form {
+    width: 100%;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact .header {
+    height: 45vw;
+  }
+}
