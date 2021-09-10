@@ -113,17 +113,32 @@
 
 @media (max-width: 480px) {
   .header__home {
-    height: 80vw;
-
-    & h1 {
-      text-align: center;
-    }
+    height: 70vw;
   }
 
-  .founder__text .btn {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+  .about {
+    margin-bottom: 10%;
+  }
+
+  .banner {
+    height: 70vw;
+  }
+
+  .founder {
+    &__img {
+      width: 80%;
+      margin-bottom: 20%;
+    }
+
+    &__text {
+      padding: 0;
+
+      & .btn {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
   }
 }

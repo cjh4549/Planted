@@ -1079,12 +1079,24 @@ main .wrapper {
 }
 @media (max-width: 480px) {
   .header__home {
-    height: 80vw;
-  }
-  .header__home h1 {
-    text-align: center;
+    height: 70vw;
   }
 
+  .about {
+    margin-bottom: 10%;
+  }
+
+  .banner {
+    height: 70vw;
+  }
+
+  .founder__img {
+    width: 80%;
+    margin-bottom: 20%;
+  }
+  .founder__text {
+    padding: 0;
+  }
   .founder__text .btn {
     display: block;
     width: 100%;
