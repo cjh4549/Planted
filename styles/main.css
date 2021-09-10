@@ -975,11 +975,46 @@ main .wrapper {
   }
   .founder__img {
     width: 50%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+  }
+  .founder__text .btn {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
-  .feature {
-    padding-top: min(max(4rem, 2rem + 15vw), 5rem);
+  .feature ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feature ul li {
+    width: 80%;
+  }
+
+  .gallery .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gallery .wrapper ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .founder__text .btn {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
 }

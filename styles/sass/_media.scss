@@ -22,16 +22,42 @@
 
     &__img {
       width: 50%;
-      margin-bottom: 10%;
+      margin-bottom: 15%;
+    }
+
+    &__text .btn {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .feature {
-    padding-top: min(max(4rem, 2rem + 15vw), 5rem);
+  .feature ul {
+    flex-direction: column;
+    align-items: center;
+
+    & li {
+      width: 80%;
+    }
+  }
+
+  .gallery .wrapper {
+    justify-content: center;
+
+    & ul {
+      flex-direction: column;
+    }
   }
 }
 
 @media (max-width: 480px) {
+  .founder__text .btn {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
