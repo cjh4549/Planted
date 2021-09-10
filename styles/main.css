@@ -555,7 +555,7 @@ i.fa-bars {
 
 .feature {
   background-color: #f0efed;
-  padding-top: min(max(4rem, 2rem + 15vw), 8rem);
+  padding-top: min(max(4rem, 2rem + 15vw), 7rem);
 }
 .feature ul {
   display: -webkit-box;
@@ -944,4 +944,14 @@ main .wrapper {
 }
 .contact .form-comment {
   height: 15vw;
+}
+
+@media (max-width: 1180px) {
+  .founder__img {
+    width: 180%;
+  }
+
+  .feature .wrapper {
+    width: 91%;
+  }
 }
