@@ -23,7 +23,7 @@ h1 {
 
 p {
   font-family: $roboto;
-  @include fluidFS(18, 20, 300);
+  @include fluidFS(16, 20, 300);
   line-height: 1.6rem;
 }
 

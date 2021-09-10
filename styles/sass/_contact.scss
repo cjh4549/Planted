@@ -17,7 +17,7 @@
 }
 
 .mainContact {
-  padding: min(max(4rem, 2rem + 15vw), 6rem) 0;
+  padding: min(max(4rem, 2rem + 15vw), 7.5rem) 0;
 }
 
 main .wrapper {
@@ -26,6 +26,9 @@ main .wrapper {
 }
 
 .socialIcons {
+  position: relative;
+  z-index: 999;
+
   & ul {
     display: flex;
 
@@ -44,11 +47,13 @@ main .wrapper {
       display: block;
       margin: 1rem 0;
       color: $black;
+      @include fluidFS(20, 24, 300);
       font-size: 1.2rem;
       font-weight: bold;
     }
 
     & a:nth-child(2) {
+      @include fluidFS(16, 20, 300);
       font-family: $roboto;
       color: $black;
     }
@@ -60,12 +65,13 @@ main .wrapper {
 }
 
 .contact .form {
-  position: relative;
-  width: 75%;
-  left: 10%;
+  width: 70%;
+  margin-top: -30%;
+  margin-left: 10%;
   padding: 4%;
   background-color: $white;
   @include boxShadowR;
+  z-index: 999;
 
   & fieldset {
     display: flex;

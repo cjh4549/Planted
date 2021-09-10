@@ -284,7 +284,7 @@ h1 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)) );
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
   line-height: 1.6rem;
 }
 
@@ -842,7 +842,7 @@ footer {
 }
 
 .mainContact {
-  padding: min(max(4rem, 2rem + 15vw), 6rem) 0;
+  padding: min(max(4rem, 2rem + 15vw), 7.5rem) 0;
 }
 
 main .wrapper {
@@ -854,6 +854,10 @@ main .wrapper {
           align-items: center;
 }
 
+.socialIcons {
+  position: relative;
+  z-index: 999;
+}
 .socialIcons ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,10 +875,12 @@ main .wrapper {
   display: block;
   margin: 1rem 0;
   color: #000;
+  font-size: calc( 20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)) );
   font-size: 1.2rem;
   font-weight: bold;
 }
 .contactInfo-links a:nth-child(2) {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
   font-family: "Roboto", sans-serif;
   color: #000;
 }
@@ -883,13 +889,14 @@ main .wrapper {
 }
 
 .contact .form {
-  position: relative;
-  width: 75%;
-  left: 10%;
+  width: 70%;
+  margin-top: -30%;
+  margin-left: 10%;
   padding: 4%;
   background-color: #fff;
   -webkit-box-shadow: -1rem 1rem #f8e71c;
           box-shadow: -1rem 1rem #f8e71c;
+  z-index: 999;
 }
 .contact .form fieldset {
   display: -webkit-box;
