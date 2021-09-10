@@ -342,7 +342,7 @@ fieldset {
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-.btn:hover, .btn:focus {
+.btn:hover, .btn:focus, .btn:active {
   background-color: #fff;
   color: #0e902d;
 }

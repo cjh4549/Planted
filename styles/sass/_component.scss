@@ -34,7 +34,8 @@
   transition: all 0.15s;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $white;
     color: $green;
   }
