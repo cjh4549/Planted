@@ -35,6 +35,24 @@
 }
 
 @media (max-width: 768px) {
+  .header__home::before {
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+
+    &__items {
+      display: none;
+    }
+  }
+
+  i.fa-bars {
+    @include fluidFS(25, 35, 300);
+    visibility: visible;
+  }
+
   .workshop {
     flex-direction: column;
   }
@@ -94,6 +112,14 @@
 }
 
 @media (max-width: 480px) {
+  .header__home {
+    height: 80vw;
+
+    & h1 {
+      text-align: center;
+    }
+  }
+
   .founder__text .btn {
     display: block;
     width: 100%;

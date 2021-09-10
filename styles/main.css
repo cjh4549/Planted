@@ -985,6 +985,27 @@ main .wrapper {
   }
 }
 @media (max-width: 768px) {
+  .header__home::before {
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar__items {
+    display: none;
+  }
+
+  i.fa-bars {
+    font-size: calc( 25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)) );
+    visibility: visible;
+  }
+
   .workshop {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1057,6 +1078,13 @@ main .wrapper {
   }
 }
 @media (max-width: 480px) {
+  .header__home {
+    height: 80vw;
+  }
+  .header__home h1 {
+    text-align: center;
+  }
+
   .founder__text .btn {
     display: block;
     width: 100%;
