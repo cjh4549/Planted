@@ -963,6 +963,20 @@ main .wrapper {
   .about {
     padding: min(max(4rem, 2rem + 15vw), 6rem) 0;
   }
+
+  .founder {
+    padding: min(max(4rem, 2rem + 15vw), 8rem) 0;
+  }
+  .founder .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .founder__img {
+    width: 50%;
+    margin-bottom: 10%;
+  }
 }
 @media (max-width: 768px) {
   .feature {
