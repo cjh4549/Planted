@@ -1258,11 +1258,17 @@ main .wrapper {
   .contact .form {
     width: 100%;
   }
+  .contact .form fieldset textarea {
+    height: 35vw;
+  }
 }
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .contact .header {
+    height: 45vw;
+  }
+  .contact .form fieldset textarea {
     height: 45vw;
   }
 }
