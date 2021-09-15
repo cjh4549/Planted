@@ -1,5 +1,7 @@
-const hamburger = document.querySelector('#hamburger');
+const hamburger = document.querySelector('.hamburger');
+const navItems = document.querySelector('.navbar__items');
 
 hamburger.addEventListener('click', function(){
-    console.log('clicked')
+    hamburger.classList.toggle("active");
+    navItems.classList.toggle("active");
 })

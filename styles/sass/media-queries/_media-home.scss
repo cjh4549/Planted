@@ -44,13 +44,40 @@
     justify-content: space-between;
 
     &__items {
-      display: none;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      background-color: $black;
+      text-align: center;
+      transition: 0.5s;
+
+      &.active {
+        top: 0;
+      }
+
+      & li {
+        margin: 1.5rem;
+      }
     }
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+
+    &.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
   }
 
   .workshop {
