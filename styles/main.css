@@ -999,6 +999,10 @@ main .wrapper {
     visibility: hidden;
   }
 
+  .heroText {
+    z-index: 0;
+  }
+
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1018,11 +1022,14 @@ main .wrapper {
     width: 100%;
     background-color: #000;
     text-align: center;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.9;
   }
   .navbar__items.active {
     top: 0;
+    height: 100vh;
+    z-index: 1;
   }
   .navbar__items li {
     margin: 1.5rem;

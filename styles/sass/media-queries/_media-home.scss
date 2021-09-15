@@ -39,6 +39,10 @@
     visibility: hidden;
   }
 
+  .heroText {
+    z-index: 0;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -51,10 +55,13 @@
       width: 100%;
       background-color: $black;
       text-align: center;
-      transition: 0.5s;
+      transition: 0.3s;
+      opacity: 0.9;
 
       &.active {
         top: 0;
+        height: 100vh;
+        z-index: 1;
       }
 
       & li {
