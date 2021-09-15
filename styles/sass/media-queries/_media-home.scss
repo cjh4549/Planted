@@ -61,7 +61,7 @@
       &.active {
         top: 0;
         height: 100vh;
-        z-index: 1;
+        z-index: 1000;
       }
 
       & li {
@@ -73,7 +73,7 @@
   .hamburger {
     display: block;
     cursor: pointer;
-    z-index: 1;
+    z-index: 1000;
 
     &.active .bar:nth-child(2) {
       opacity: 0;
