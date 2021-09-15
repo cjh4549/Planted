@@ -48,9 +48,9 @@
     }
   }
 
-  i.fa-bars {
-    @include fluidFS(25, 35, 300);
-    visibility: visible;
+  .hamburger {
+    display: block;
+    cursor: pointer;
   }
 
   .workshop {

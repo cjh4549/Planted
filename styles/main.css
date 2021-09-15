@@ -374,8 +374,18 @@ fieldset {
   overflow: hidden;
 }
 
-i.fa-bars {
-  visibility: hidden;
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
 }
 
 .header__home {
@@ -1001,9 +1011,9 @@ main .wrapper {
     display: none;
   }
 
-  i.fa-bars {
-    font-size: calc( 25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)) );
-    visibility: visible;
+  .hamburger {
+    display: block;
+    cursor: pointer;
   }
 
   .workshop {
