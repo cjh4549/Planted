@@ -58,7 +58,7 @@ form.addEventListener('submit', function(event){
 
 const commentPaste = function(userName, comment, printDate){
     const newComment = document.createElement('div');
-    newComment.classList.add('blog__article__comment-user');
+    newComment.classList.add('blog__article__comment-user', 'animation');
 
     newComment.innerHTML = `
     <div class="blog__article__comment-img">

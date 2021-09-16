@@ -848,6 +848,36 @@ footer {
   height: 15vw;
 }
 
+.animation {
+  -webkit-animation: slideup 0.3s forwards;
+          animation: slideup 0.3s forwards;
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .contact {
   background-color: #f0efed;
 }
