@@ -51,18 +51,27 @@ form.addEventListener('submit', function(event){
     email.value = '';
     comment.value ='';
 
+    let randomImage 
+    let randomNum = Math.round((Math.random() * 1) + 1);
+
+    if (randomNum === 2) {
+        randomImage = ``
+    } else if (randomNum === 1) {
+        randomImage = '-2'
+    }
+    
     if(nameValue && emailValue && commentValue) {
-        commentPaste(nameValue, commentValue, printDate);
+        commentPaste(nameValue, commentValue, printDate, randomImage);
     }
 })
 
-const commentPaste = function(userName, comment, printDate){
+const commentPaste = function(userName, comment, printDate, randomImage){
     const newComment = document.createElement('div');
     newComment.classList.add('blog__article__comment-user', 'animation');
 
     newComment.innerHTML = `
     <div class="blog__article__comment-img">
-        <img src="../planted-final-assets/profile-image-2.jpg" alt="a photo of user-female">
+        <img src="../planted-final-assets/profile-image${randomImage}.jpg" alt="a photo of user-female">
     </div>
     <div class="blog__article__comment-user-text">
         <h3>${printDate()} by ${userName}</h3>
