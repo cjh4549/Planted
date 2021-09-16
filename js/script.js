@@ -23,3 +23,12 @@ navLink.forEach(n => n.addEventListener('click', function(){
 
     window.removeEventListener('scroll', preventScroll);
 }))
+
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const comment = document.querySelector('.form');
+
+comment.addEventListener('submit', function(event){
+    event.preventDefault();
+    
+})
