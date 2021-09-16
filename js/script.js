@@ -26,9 +26,18 @@ navLink.forEach(n => n.addEventListener('click', function(){
 
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
-const comment = document.querySelector('.form');
+const comment = document.querySelector('#comment');
+const form = document.querySelector('.form');
 
-comment.addEventListener('submit', function(event){
+const formSubmit = form.addEventListener('submit', function(event){
     event.preventDefault();
-    
+    console.log(name.value);
+    console.log(email.value);
+    console.log(comment.value);
 })
+
+const printDate = function(){
+    const event = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    console.log(event.toLocaleDateString(undefined, options));
+}
