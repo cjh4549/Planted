@@ -1,3 +1,5 @@
+//hamburger
+
 const hamburger = document.querySelector('.hamburger');
 const navItems = document.querySelector('.navbar__items');
 const navLink = document.querySelectorAll('.navbar__items li');
@@ -24,11 +26,19 @@ navLink.forEach(n => n.addEventListener('click', function(){
     window.removeEventListener('scroll', preventScroll);
 }))
 
+//Blog comment 
+
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const comment = document.querySelector('#comment');
 const form = document.querySelector('.form');
 const commentContainer = document.querySelector('.commentContainer');
+
+const printDate = function(){
+    const event = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return event.toLocaleDateString(undefined, options);
+}
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
@@ -46,15 +56,9 @@ form.addEventListener('submit', function(event){
     }
 })
 
-const printDate = function(){
-    const event = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return event.toLocaleDateString(undefined, options);
-}
-
 const commentPaste = function(userName, comment, printDate){
     const newComment = document.createElement('div');
-
+    newComment.classList.add('blog__article__comment-user');
 
     newComment.innerHTML = `
     <div class="blog__article__comment-img">

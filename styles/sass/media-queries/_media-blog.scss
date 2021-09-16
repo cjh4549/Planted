@@ -59,7 +59,7 @@
       &__comment {
         margin: 2rem 10% 0 10%;
 
-        &-user:nth-of-type(2) {
+        &-user:last-of-type {
           margin-bottom: 25%;
         }
       }

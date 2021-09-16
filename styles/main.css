@@ -1217,7 +1217,7 @@ main .wrapper {
   .blog__article__comment {
     margin: 2rem 10% 0 10%;
   }
-  .blog__article__comment-user:nth-of-type(2) {
+  .blog__article__comment-user:last-of-type {
     margin-bottom: 25%;
   }
 }
