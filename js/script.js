@@ -28,7 +28,7 @@ const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const comment = document.querySelector('#comment');
 const form = document.querySelector('.form');
-const commentSection = document.querySelector('.blog__article__comment');
+const commentContainer = document.querySelector('.commentContainer');
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
@@ -37,8 +37,12 @@ form.addEventListener('submit', function(event){
     const emailValue = email.value;
     const commentValue = comment.value;
 
+    name.value = '';
+    email.value = '';
+    comment.value ='';
+
     if(nameValue && emailValue && commentValue) {
-        commentPaste(nameValue, printDate);
+        commentPaste(nameValue, commentValue, printDate);
     }
 })
 
@@ -48,7 +52,7 @@ const printDate = function(){
     return event.toLocaleDateString(undefined, options);
 }
 
-const commentPaste = function(userName, printDate){
+const commentPaste = function(userName, comment, printDate){
     const newComment = document.createElement('div');
 
 
@@ -58,9 +62,8 @@ const commentPaste = function(userName, printDate){
     </div>
     <div class="blog__article__comment-user-text">
         <h3>${printDate()} by ${userName}</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat corporis doloremque aspernatur, est, nisi placeat dolores iste corrupti at earum, quas quia alias cumque eos numquam ullam sed atque.</p>
+        <p>${comment}</p>
     </div>`;
 
-    const blogArticle = document.querySelector('.blog__article__comment');
-    blogArticle.appendChild(newComment);
+    commentContainer.appendChild(newComment);
 }
